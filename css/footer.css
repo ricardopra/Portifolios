@@ -1,0 +1,56 @@
+.footer {
+  max-width: 1600px;
+  max-height: 340px;
+  background-color: black;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1);
+  gap: 10px;
+  place-items: center;
+  
+}
+
+.footer h1{
+  font-size: 2.5rem;
+  color: #a3a3a3;
+}
+
+.formulario{
+  grid-row-start: 2;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 60px 10px 30px;
+  color: #fff;
+  box-shadow: 0px 0px 5px #000, 0px 0px 5px #858585;
+  margin-top: 10px;
+  width: 150px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.icones{
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px 80px;
+  grid-row-start: 1;
+  place-items: center;
+  }
+ 
+
+.icones img{
+  filter: grayscale(100%);
+  width: 30px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.icones img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+
+}
+
+

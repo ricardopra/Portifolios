@@ -1,0 +1,85 @@
+.introducao {
+  max-width: 1200px;
+  max-height: 1200px;
+  padding: 60px 90px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6.0rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+  color: #145af2;
+ }
+
+
+.titulo-principal:after{
+  content: ' </>';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .6s infinite;
+ }
+
+ @keyframes pisca{
+  0%, 100%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0;
+  }
+}
+
+.introducao img{
+  max-width: 100%; 
+}
+
+.introducao p {
+  font-size: 3rem;
+  color: #525252;
+  
+}
+
+
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 10px 10px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+
+  .introducao p{
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  .introducao img {
+    width: 65%;    
+  }
+}
