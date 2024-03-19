@@ -103,29 +103,22 @@ btnVoltarTopo.addEventListener('click', () => {
 });
 
 ScrollReveal().reveal('.experiencia',{ 
-  origin: 'left',  
-  duration: 3000, 
+  origin: 'bottom',  
+  duration: 6000, 
   distance: '100px',
   delay: 800,
   useDelay: 'always',
   reset: true,
-}, { 
-  mobile: true }
+}, 
 );
 
 ScrollReveal().reveal('.formacao-container',{ 
-  origin: 'right',  
-  duration: 3000, 
-  distance: '250px',
-  delay: 200,
+  origin: 'bottom',  
+  duration: 6000, 
+  distance: '100px',
+  delay: 800,
   delayOnEnter: true,
   reset: true,
-}, { 
-  mobile: true }
+}, 
 );
 
-const ip = window.location.hostname;
-const hostname = window.location.hostname;
-
-document.getElementById("ip").innerHTML = ip;
-document.getElementById("hostname").innerHTML = hostname;
