@@ -76,14 +76,20 @@
     grid-template-columns: 1fr;
   }
 
-  .carrosel{
-    
+  .carrosel{    
+    grid-template-columns: 1fr;
+    height: 400px;
+    width: 400px;
+  }
+
+  .container{    
     grid-template-columns: 1fr;
   }
 
-  .container{
-    
+  .container img {
     grid-template-columns: 1fr;
+    height: 390px;
+    width: 390px;
   }
 
 }
