@@ -68,7 +68,15 @@
 }
 
 @media (max-width: 400px) {
-  .empresa {
+  .projeto{
     grid-template-columns: 1fr;
   }
+  .projeto .subtitulo {
+    grid-template-columns: 1fr;
+  }
+
+  .carrosel{
+    grid-template-columns: 1fr;
+  }
+
 }
