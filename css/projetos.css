@@ -51,8 +51,7 @@
   .projeto {
     grid-template-columns: 1fr;
     gap: 2px;
-    justify-items: center;
-    text-align: center;
+    justify-items: center;    
   }
 
   .projeto .subtitulo {
@@ -69,13 +68,21 @@
 
 @media (max-width: 400px) {
   .projeto{
+    display: grid;
     grid-template-columns: 1fr;
   }
   .projeto .subtitulo {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
   .carrosel{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .carrosel .container{
+    display: grid;
     grid-template-columns: 1fr;
   }
 
