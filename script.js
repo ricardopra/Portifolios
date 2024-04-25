@@ -97,22 +97,48 @@ btnVoltarTopo.addEventListener('click', () => {
 });
 
 ScrollReveal().reveal('.experiencia',{ 
-  origin: 'bottom',  
-  duration: 6000, 
+  origin: 'top',  
+  duration: 2000, 
   distance: '100px',
-  delay: 800,
+  delay: 600,
   useDelay: 'always',
   reset: true,
 }, 
 );
 
 ScrollReveal().reveal('.formacao-container',{ 
-  origin: 'bottom',  
-  duration: 6000, 
+  origin: 'top',  
+  duration: 2000, 
   distance: '100px',
-  delay: 800,
+  delay: 600,
   delayOnEnter: true,
   reset: true,
 }, 
 );
 
+ScrollReveal().reveal('.projeto',{ 
+  origin: 'down',  
+  duration: 2000, 
+  distance: '100px',
+  delay: 600,
+  delayOnEnter: true,
+  reset: true,
+}, 
+);
+
+const imgs = document.getElementById('img1');
+const img =  document.querySelectorAll("#img1 img")
+
+let idx = 0
+
+function carrossel (){
+  idx++;
+
+  if(idx > img.length - 1){
+    idx = 0;
+  }
+
+  imgs.style.transform = `translateX(${-idx * 500}px)`;
+}
+
+setInterval(carrossel, 15000);
