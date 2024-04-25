@@ -68,21 +68,21 @@
 
 @media (max-width: 400px) {
   .projeto{
-    display: grid;
+    
     grid-template-columns: 1fr;
   }
   .projeto .subtitulo {
-    display: grid;
+    
     grid-template-columns: 1fr;
   }
 
   .carrosel{
-    display: grid;
+    
     grid-template-columns: 1fr;
   }
 
-  .carrosel .container{
-    display: grid;
+  .container{
+    
     grid-template-columns: 1fr;
   }
 
