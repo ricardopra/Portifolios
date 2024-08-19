@@ -100,7 +100,7 @@ ScrollReveal().reveal('.experiencia',{
   origin: 'top',  
   duration: 2000, 
   distance: '100px',
-  delay: 600,
+  delay: 1600,
   useDelay: 'always',
   reset: true,
 }, 
